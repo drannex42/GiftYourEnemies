@@ -14,7 +14,7 @@ var app = express();
 // view engine setup
 
 app.engine('handlebars', exphbs({
-  defaultLayout: 'main',
+  defaultLayout: '',
   partialsDir: ['views/partials/']
 }));
 app.set('views', path.join(__dirname, 'views'));
