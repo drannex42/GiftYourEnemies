@@ -211,6 +211,12 @@ margin-right: 5px;
     background-size: cover;
 }
 
+.sold-out {
+    background-image:url('../images/sold-out.jpg');
+    background-size: cover;
+}
+    
+
 .footer {
     background:#ff4136;
     color:white;
