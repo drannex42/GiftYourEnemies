@@ -32,12 +32,21 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
 .border-dash {
     background:#ff4136;
     width: 70px;
-height: 2px;
+    height: 2px;
     margin: 0 auto;
     margin-bottom: 20px;
-margin-top: 20px;
-    
+    margin-top: 20px;   
 }
+
+.border-dash-cd {
+    background:#0074d9;
+    width: 70px;
+    height: 2px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 20px; 
+}
+    
 .buy-btn {
     background:#ff4136;
     color:white;
