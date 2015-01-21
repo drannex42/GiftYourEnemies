@@ -19,24 +19,7 @@
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50e215880416752d" async="async"></script>
 
-    <div id="navbar">
-        <div class="container">
-            <div class="row" style="margin-bottom: .7rem;">
-                <div class="menu-row">
-                    <div class="five columns">
-                         <a class="brand" href="/"><i class="ion ion-android-checkbox-outline"></i> Gift Your Enemies</a>
-                    </div>
-                    <div class="seven columns">
-                        <ul>
-                            <li><a href="#evil" class="menu-button">It's Evil</a></li>
-                            <li><a href="#faq" class="menu-button">FAQ</a></li>
-                            <li><a href="#payment" class="menu-button" style="border:1px solid white;">Buy</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    {{> navbar}}
     
   <div class="banner">
       <div class="container">
@@ -174,7 +157,15 @@ We <strong>promise</strong> that anything inside the third gift is 100% hypo-all
     <div class="border-dash"></div>
     
     <a name="payment"></a>
-    <center><h3>Payment</h3></center>
+        <a name="payment"></a>
+    <center><h3>Payment (Credit/Debit Card) or <a href="JavaScript:newPopup('/paypal');"><img src="/images/paypal.png" style="
+    width: 200px;
+    vertical-align: middle;
+    padding-bottom: 8px;
+    height: 50px;
+"></a>
+</h3>
+        
 <iframe id="JotFormIFrame" onload="window.parent.scrollTo(0,0)" allowtransparency="true" src="https://secure.jotform.us/form/50181975117153" frameborder="0" style="width:100%; height:1261px; border:none;" scrolling="no"></iframe>
 <script type="text/javascript">window.handleIFrameMessage = function(e) {var args = e.data.split(":");var iframe = document.getElementById("JotFormIFrame");if (!iframe)return;switch (args[0]) {case "scrollIntoView":iframe.scrollIntoView();break;case "setHeight":iframe.style.height = args[1] + "px";break;case "collapseErrorPage":if (iframe.clientHeight > window.innerHeight) {iframe.style.height = window.innerHeight + "px";}break;case "reloadPage":window.location.reload();break;}};if (window.addEventListener) {window.addEventListener("message", handleIFrameMessage, false);} else if (window.attachEvent) {window.attachEvent("onmessage", handleIFrameMessage);}</script>
     
@@ -197,6 +188,13 @@ We <strong>promise</strong> that anything inside the third gift is 100% hypo-all
   ga('create', 'UA-58607387-1', 'auto');
   ga('send', 'pageview');
 
+</script>
+                <script type="text/javascript">
+// Popup window code
+function newPopup(url) {
+	popupWindow = window.open(
+		url,'popUpWindow','height=700,width=800,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+}
 </script>
     
 </body>
